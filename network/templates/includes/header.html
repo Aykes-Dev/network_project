@@ -1,0 +1,26 @@
+<header class=".container py-4 bg-primary row d-flex align-items-center">
+    <nav class="nav col-5">
+        <a class="nav-link text-light h5"
+           aria-current="page"
+           href="{% url 'posts:index' %}">Главная</a>
+        <a class="nav-link text-light h5" href="{% url 'posts:index' %}">О нас</a>
+        <a class="nav-link text-light h5" href="{% url 'posts:index' %}">Галерея</a>
+        <a class="nav-link text-light h5" href="{% url 'posts:index' %}">Поиск</a>
+        <a class="nav-link text-light h5" href="{% url 'posts:index' %}">Обратная связь</a>
+    </nav>
+    <div class="col">
+        <div class="container row">
+            <div class="col text-end" id="link-network">
+                {% for social_network in social_networks %}
+                    <a href="{{ social_network.url }}" class="p-2">
+                        <img src="{{ social_network.url_image }}" 
+                        alt="{{ social_network.name }}"/></a>
+                {% endfor %}
+            </div>
+            <div class="col-3 text-center">
+                <button type="button" class="btn btn-primary">Вход</button>
+                <button type="button" class="btn btn-primary">Регистрация</button>
+            </div>
+        </div>
+    </div>
+</header>
