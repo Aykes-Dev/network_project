@@ -34,6 +34,18 @@
 .box{
     width: 100%;
     height: 40vh;
+    -webkit-box-shadow: 2px 2px 2px #918b8b;
+    -moz-box-shadow: 2px 2px 2px #918b8b;
+    box-shadow: 2px 2px 2px #918b8b;
+    -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+.box:hover{
+    cursor: pointer;
+    border: 1px solid black !important;
+    -webkit-box-shadow: 2px 2px 2px #000;
+    -moz-box-shadow: 2px 2px 2px #000;
+      box-shadow: 2px 2px 2px #000;
 }
 .ava{
     width: 7em;
@@ -42,12 +54,18 @@
     float: left;
     margin-left: -2.5em;
     margin-top: -2em;
+    -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
 .post{
     max-height: 15em;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.box:active{
+.ava:hover{
     border: 1px solid black !important;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 2px #000;
+    -moz-box-shadow: 2px 2px 2px #000;
+      box-shadow: 2px 2px 2px #000;
 }

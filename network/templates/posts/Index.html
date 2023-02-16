@@ -3,7 +3,8 @@
   <div class="container-fluid row row-cols-4 pt-4 pe-0 justify-content-md-start">
     {% for post in posts %}
     <div class="col p-5 pb-3">
-      <div class="ava border rounded-circle me-3 bg-light">
+      <div class="ava border rounded-circle me-3 bg-light" 
+           onclick="location.href='{% url 'users:logout' %}'">
       </div>
       <div class="box border rounded">
         <div class="container mt-1 fw-bold">
